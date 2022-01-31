@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Nice. It's looking good already.</h1>
-  </body>
-</html>
+{{ define "main" }} {{ partial "navbar" . }}
+
+<div class="container mx-auto px-5 sm:px-10">
+  <div class="pt-40" id="intro">{{ partial "intro" . }}</div>
+  <div class="pt-40" id="about">{{ partial "about" . }}</div>
+  <div class="pt-40" id="portfolio">{{ partial "portfolio" . }}</div>
+  <div class="pt-40" id="contact">{{ partial "contact" . }}</div>
+</div>
+
+{{ end }}
